@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jason Shin's Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/9d7d6fd028.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/pfp.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>looks like I finished "Hello World"</p>
+                <h1>Hi, I'm <span>Jason</span> Shin</h1>
+                <h3>come explore with me !!</h3>
+            </div>
+        </div>
+    </div>
+<!------------------------ about ------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a sophomore at Stanford building cool things that I would
+                        want to use
+                    </p>
+                    <img src="images/user1.png">
+                </div>
+                <div class="about-col-2">
+                    <!-- <h1 class="sub-title">About Me</h1>
+                    <p>I am currently a sophomore at Stanford building cool things that I hope
+                        will make an impact
+                    </p> -->
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Work</p>
+                        <p class="tab-links" onclick="opentab('education')">University</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span> <span>Figma</span> <span>Git</span> <span>SQL</span> <span>C++</span>
+                            <li><span>Javascript</span> <span>CSS</span> <span>HTML</span> <span>Python</span>
+                            <li><span>SEO</span> <span>Growth</span> <span>Market Research</span> <span>Excel</span>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023</span><br><br>Product Management Intern at Operations Army (OpsArmy)</li>
+                            <li><span>2023</span><br><br>CS Research Intern at the Stanford Institute for Human-Centered AI </li>
+                            <li><span>2020-2023</span><br><br>National Chapter Mobilization Director at Diversify Our Narrative</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Expected June 2026</span><br><br>B.S. in Symbolic Systems, <i>Human Computer Interaction</i>, <strong>Stanford</strong></li>
+                            <li><span>Expected June 2026</span><br><br>Minor in International Relations, <i>Economic Development</i>, <strong>Stanford</strong></li>
+                            <li><span>Expected June 2027</span><br><br>M.S. in Computer Science, <i>Artificial Intelligence</i>, <strong>Stanford</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------------------ services ------------------------>
+<!-- <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>UI/UX Design</h2>
+                <p>Some descirption for web design, sort of thing</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Web Design</h2>
+                <p>Some descirption for web design, sort of thing</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Some descirption for web design, sort of thing</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!------------------------ portfolio ------------------------>
+<div id="portfolio">
+    <div class="container">
+        <div class="row">
+            
+        <div class="work-list">
+            <div class="work">
+                <img src="images/babynames.png">
+                <!-- <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around teh world. Download it from play store.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div> -->
+            </div>
+            <div class="work">
+                <img src="images/biasbars.png">
+                <!-- <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you to the talented people around teh world. Download it from play store.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div> -->
+            </div>
+            <div class="work">
+                <img src="images/particle.png">
+                <!-- <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you to the talented people around teh world. Download it from play store.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div> -->
+            </div>
+        </div>
+        <div class="description-right">
+            <div class="project-1">
+                <h2>Project 1</h2>
+                <div class="project-1-decription">
+                    <p>For this project, I wrote a Python program to read in baby name data from thousands of text 
+                        files and build a nested dictionary structure to store name rankings across multiple decades. 
+                        My program can efficiently load large amounts of data and enable fast searches across all names 
+                        in the dataset, demonstrating skills in processing big data, organizing information, and 
+                        implementing search algorithms.</p>
+                </div>
+                <a href="https://github.com/Shin-Jason/babynames" class="btn">Info / Git Repository</a>
+            </div>
+            <div class="project-2">
+                <h2>Project 2</h2>
+                <div class="project-2-decription">
+                    <p>In this project, I analyzed a dataset of professor reviews to investigate potential gender 
+                        biases. I created bar charts visualizing the frequency of various words in reviews of male 
+                        vs female professors, and reflected on ethical issues like gender classification and problem 
+                        formulation. Overall, I used data visualization and critical thinking skills to uncover 
+                        trends about gendered language usage in a real-world dataset.
+
+                    </p>
+                </div>
+                <a href="https://github.com/Shin-Jason/biasbars" class="btn">Info / Git Repository</a>
+            </div>
+            <div class="project-3">
+                <h2>Project 3</h2>
+                <div class="project-3-decription">
+                    <p>For this project, I implemented a 2D particle system in C++ that simulates various visual 
+                        effects like fireworks, fountains, and snow. I used linked data structures like doubly-linked 
+                        lists to efficiently store and manipulate particles with different behaviors and lifetimes. 
+                        The final product allows users to visualize different particle effects through an interactive 
+                        graphical interface.</p>
+                </div>
+                <a href="https://github.com/Shin-Jason/particlesystem" class="btn">Info / Git Repository</a>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<!------------------------ contact ------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">say hi :)</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> jasonshin711@gmail.com</p>
+                <p>socials !</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/_jasonshin/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/Shin-Jason"><i class="fa-brands fa-github"></i></a>
+                    <a href="www.linkedin.com/in/shinjasonl"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <!-- <a href="images/..." download class="btn btn2">Download CV</a> IF I EVER WANT TO DOWNLOAD ANYTHING!! -->
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>@jason shin 2023</p>
+    </div>
+</div>
+
+
+<!-- this is for the animation of clicking skills, experience, education -->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz-RELEA4k29Q87jsbliMWZExtNrAUtYfurQvv4ot93qxuNgXWzdlcXjagKsWTyfuHN_g/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+    </body>
+</html>
+
