@@ -12,13 +12,11 @@ body{
     color: #fff;
 }
 
-/* container for nav bar and logo */
 .container{
     padding: 10px 10%;
     
 }
 
-/* image and links side by side, space between and center so logo and heading is a part */
 nav{
     display: flex;
     align-items: center;
@@ -33,7 +31,6 @@ nav{
     position: absolute;
 }
 
-/* j logo */
 .logo{
     width: 140px;
     height: 100px;
@@ -41,32 +38,18 @@ nav{
     border-radius: 50%;
 }
 
-/* nav bar on top spacing margins and moving horizontal*/
 nav ul li{ 
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
 
-/* remove underline and add color to nav bar */
 nav ul li a{
     color: #003300;
     text-decoration: none;
     font-size: 23px;
     position: relative;
 }
-
-/* hover line on nav bar links */
-/* nav ul li a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #5a77e3;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-} */
 
 nav ul li a {
     transition: 0.5s;
@@ -79,12 +62,10 @@ nav ul li a {
     border-radius: 20px;
   }
 
-/* line only when cursor */
 nav ul li a:hover::after{
     width: 100%;
 }
 
-/* description of who I am and header in background, hi im jason */
 .header-text{
     margin-top: 20%;
     font-size: 30px;
@@ -92,13 +73,11 @@ nav ul li a:hover::after{
     text-align: center;
 }
 
-/* hi im jason... */
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
 }
 
-/* only jason */
 .header-text h1 span{
     color: #5a77e3;
 }
@@ -106,15 +85,11 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 
-/* ------------------------------about ------------------------------*/
-
-/* space in between and changes about me text */
 #about{
     padding: 80px 0;
     color: #ababab;
 }
 
-/* lines up the two rows, one with image and the other with about me */
 .row{
     display: flex;
     justify-content: space-between;
@@ -125,7 +100,6 @@ nav ul li a:hover::after{
     flex-basis: 35%;
 }
 
-/* round corners on image */
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
@@ -136,14 +110,12 @@ nav ul li a:hover::after{
     flex-basis: 60%;
 }
 
-/* font size and color */
 .sub-title{
     font-size: 60px;
     font-weight: 600;
     color: #fff;
 }
 
-/* aligning skills, education, experiences */
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
@@ -161,20 +133,6 @@ nav ul li a:hover::after{
     margin-left: 100px;
 }
 
-/* adding the underline things */
-/* .tab-links::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #5a77e3;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
-}
-.tab-links.active-link::after{
-    width: 50%;
-} */
 .tab-links {
     transition: 0.3s ease;
   }
@@ -185,7 +143,6 @@ nav ul li a:hover::after{
     padding: 10px 20px;
   }
 
-/* skills list */
 .tab-contents ul li{
     list-style: none;
     margin: 10px;
@@ -198,65 +155,13 @@ nav ul li a:hover::after{
     padding: 10px;
 }
 
-/* hiding experience and education before clicking */
 .tab-contents{
     display: none;
 }
 
-/* now, displays whichever is chosen */
 .tab-contents.active-tab{
     display: block;
 }
-
-/* ------------------------------ services ------------------------------*/
-/* #services{
-    padding: 30px 0;
-}
-.services-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-
-/* styling the services boxes */
-/* .services-list div{
-    background: #262626;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: background 0.5s, transform 0.4s;
-} */
-
-/* changing icon size and stuff */
-/* .services-list div i{
-    font-size: 50px;
-    margin-bottom: 30px;
-} */
-
-/* spacing and color for the words in the boxes */
-/* .services-list div h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-} */
-/* .services-list div a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
-} */
-
-/* hover effect on the service boxes */
-/* .services-list div:hover{
-    background: #5a77e3;
-    transform: translateY(-10px);
-} */ 
-
-/* ------------------------------ portfolio ------------------------------*/
-
 
 .description-right{
     margin-top: -50px;
@@ -289,7 +194,6 @@ nav ul li a:hover::after{
     padding: 50px 0;
 }
 
-/* images in portfolio to display as a grid */
 .work-list{
     flex-basis: 50%;
     display: grid;
@@ -309,48 +213,6 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 
-/* the writing on the projects */
-/* .layer{
-    width: 100%;
-    height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #5a77e3);
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 14px;
-    transition: height 0.5s;
-}
-.layer h3{
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-.layer a{
-    margin-top: 20px;
-    color: #5a77e3;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background: #fff;
-    width: 60px;
-    border-radius: 50%;
-    text-align: center;
-}
-.work:hover img{
-    transform: scale(1.1);
-}
-.work:hover .layer{
-    height: 100%;
-} */
-
-/* see more button display */
 .btn{
     display: block;
     margin: 50px auto;
@@ -366,9 +228,6 @@ nav ul li a:hover::after{
     background:#5a77e3;
 }
 
-/* ------------------------------ contact ------------------------------*/
-
-/* defining input for contact left and right */
 .contact-left{
     flex-basis: 35%;
 }
@@ -379,14 +238,12 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 
-/* icons of phone and email */
 .contact-left p i{
     color: #5a77e3;
     margin-right: 15px;
     font-size: 25px;
 }
 
-/* designing social media icons */
 .social-icons{
     margin-top: 30px;
 }
@@ -398,19 +255,16 @@ nav ul li a:hover::after{
     display: inline-block;
     transition: transform 0.5s;
 }
-/* hover for icons */
 .social-icons a{
     color: #5a77e3;
     transform: translateY(-5px);
 }
 
-/* buttons for the submit button and download */
 .btn.btn2{
     display: inline-block;
     background:#5a77e3;
 }
 
-/* contact buttons to make it look nice */
 .contact-right form{
     width: 100%;
 }
@@ -426,7 +280,6 @@ form input, form textarea{
     border-radius: 6px;
 }
 
-/* submit button decor */
 form .btn2{
     padding: 14px 60px;
     font-size: 18px;
@@ -434,7 +287,6 @@ form .btn2{
     cursor: pointer;
 }
 
-/* copyright msg */
 .copyright{
     width: 100%;
     text-align: center;
@@ -449,7 +301,6 @@ form .btn2{
 
 /* ------------------------------ css for small screens ------------------------------*/
 
-/* hiding menu and close icons on main display but leaving open for smaller screens */
 nav .fa-solid{
     display: none;
 }
@@ -467,7 +318,6 @@ nav .fa-solid{
         display: block;
         font-size: 25px;
     }
-    /* hiding nav in smaller */
     nav ul{
         background:#ff004f;
         position: fixed;
@@ -483,7 +333,6 @@ nav .fa-solid{
         display: block;
         margin: 25px;
     }
-    /* position for close icon */
     nav ul .fa-solid{
         position: absolute;
         top: 25px;
@@ -521,7 +370,6 @@ nav .fa-solid{
         flex-basis: 100%;
     }
 
-    /* contact changing width */
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
@@ -531,7 +379,6 @@ nav .fa-solid{
     }
 }
 
-/* contact form button submission confirmation */
 #msg{
     color: #61b752;
     margin-top: -40px;
