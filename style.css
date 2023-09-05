@@ -490,6 +490,11 @@ nav .fa-solid{
         left: 25px;
         cursor: pointer;
     }
+    .logo{
+        width: 100px;
+        height: 60px;
+
+    }
     .sub-title{
         font-size: 40px;
     }
@@ -505,6 +510,15 @@ nav .fa-solid{
     .tab-links{
         font-size: 16px;
         margin-right: 20px;
+    }
+    .tab-contents ul li span{
+        color: #262626;
+        font-size: 16px;
+        background-color: #5a77e3;
+        line-height: 60px;
+    }
+    .work-list, .description-right{
+        flex-basis: 100%;
     }
 
     /* contact changing width */
