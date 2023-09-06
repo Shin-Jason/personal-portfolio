@@ -97,7 +97,7 @@ nav ul li a:hover::after{
 }
 
 .about-col-1{
-    flex-basis: 45%;
+    flex-basis: 50%;
 }
 
 .about-col-1 img{
@@ -107,7 +107,7 @@ nav ul li a:hover::after{
 }
 
 .about-col-2{
-    flex-basis: 50%;
+    flex-basis: 45%;
 }
 
 .sub-title{
@@ -119,7 +119,7 @@ nav ul li a:hover::after{
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
-    margin-top: 25%;
+    margin-top: 30%;
     margin-left: 100px;
 }
 .tab-links{
